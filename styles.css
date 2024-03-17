@@ -1,0 +1,34 @@
+.tag-list {
+  width: 20rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  width: fit-content;
+  display: flex;
+  gap: 1tem;
+  animation: loop 5s linear infinite;
+  gap: 0 0.2rem;
+}
+
+.tag {
+  padding: 0.7rem 1rem;
+  background: #334155;
+}
+
+/* .fade {
+  position: absolute;
+  background: linear-gradient(90deg, #1e293b, transparent 70%, #1e293b);
+  inset: 0;
+  pointer-events: none
+} */
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
